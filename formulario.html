@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "https://kit.fontawesome.com/3c44aa10f3.js"crossorign="anonymus"></script>
+    <title>formularios</title>
+    <style>
+        div{
+            margin-bottom:4px;
+        }
+        .for1{
+            width: 32.9%;
+            margin: 6 auto;
+        }
+        .formu{
+            width:  100%;
+        }
+        .pop{
+            background-color:blueviolet;
+            border:white 1px solid;
+            border-radius: 7px; 
+            text-align:left;
+        }
+        h1{
+            color: white;
+        }
+        legend{
+            color:purple;
+            font-weight: bold;
+            border: white 2px solid;
+            border-radius: 7px;
+        }
+        input:not(input[type="checkbox"]){
+            border: rgba(156, 155, 155, 0.822) 1px solid;
+            border-radius: 2px;
+            padding: 9px;
+            margin-left: 0%;
+        }
+        input{
+            width:87%;
+             border: rgba(156, 155, 155, 0.822) 1px solid;
+            border-radius: 2px;
+            padding: 9px;
+            border-left:white;
+        }
+        .cla1{
+            width: 31.9%;
+        }
+        .cla2{
+            width: 42%;
+        } 
+        .dt{
+            margin-bottom: 10px;
+        }
+        p{
+            color: purple;
+            font-size: 15px;
+            margin-left: -1%;
+        }
+        .co1{
+            width: 5%;
+            margin-left:0%; 
+        }
+        .co2{
+            width: 7%;
+            margin-left:20%;
+        }
+        fieldset{
+            margin-bottom: 10px;
+            border: rgb(156, 155, 155) 1px solid;
+            border-radius: 6px;
+        }
+        select{
+            color: rgb(156, 155, 155);
+            width: 91.5%;
+            border: rgba(156, 155, 155, 0.822) 2px solid;
+            border-radius: 2px;
+            padding: 9px;
+            border-left:white;
+        }
+        button{
+            background-color: rgb(153, 104, 199);
+            color: white;
+            border: white;
+            width: 100px;
+            font-size: 12px;  
+            border-radius: 3px;
+            padding: 10px;
+            margin-left:70%;
+            margin-right: 0%;
+        }
+        i{
+            background-color: #ddd;
+            border: solid 1px #ccc;
+            border-radius: 5px 0px 5px 0px;
+            padding: 9px;
+            margin-right: -5px;
+            border-right: white;
+            margin-bottom: 9px;
+            color:blueviolet;
+            vertical-align: top;
+        }    
+    </style>
+</head>
+<body>
+    <!--Estructura básica de un formulario en HTML-->
+    <div class="for1">
+        <fieldset>
+        <div class="formu">
+            <fieldset class="pop">
+                <h1>Citas Médicas</h1>
+                <!--titulo principal del formulario-->
+            </fieldset>
+            <form action="grabar.html">
+                <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <i class="fas fa-user-alt"></i>
+                    <input type="text" placeholder="Nombres" name="nom" class="cla1" >
+                    <!--nombre-->
+                    <i class="fas fa-user-alt"></i>
+                    <input type="text" placeholder="Apellidos" name="Apell" class="cla2">
+                    <!--Apellidos-->
+               </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <input type="text" placeholder="Celular" name="cel" maxlength="12">
+                    <!--Nùmero de celular-->
+                    </div>
+                    <div>
+                    <i class="fas fa-envelope letter-alt"></i>
+                    <input type="email" placeholder="Correo Electrónico"name="email">
+                    <!--correo electronico-->
+                    </div>
+                    <div>
+                       <i class="fas fa-pencil-alt"></i>
+                        <input type="text" placeholder="Dirección" name="direc">
+                    <!--Direcciòn-->
+                    </div>
+                </fieldset>
+                <fieldset class="dt">
+                    <legend>Datos de la Cita Medica</legend>
+                    <i class="fas fa-bars"></i>
+                    <select>
+                        <option value= "primera vez">primera vez</option>
+                        <option value= "segunda vez">segunda vez</option>
+                        <option value= "tercera vez">tercera vez</option>
+                        <option value= "cuarta vez">cuarta vez</option>
+                        <option value= "Asegurado ">Asegurado</option>  
+                        <!-- selecionar la cantidad de veces que fue atendido-->
+                    </select>
+                    <div>
+                    <i class="far fa-calendar-alt"></i>
+                        <input type="date" placeholder="Fecha" name="Fech">
+                        <!--fecha-->
+                    </div> 
+                    <p>Seleccione Turno</p>  
+                    <div class="hours">
+                        <input type="checkbox" name="horas" id="hor1" class="co1">
+                        <label for="hor1">Hora 2:30 pm N° 1</label>
+                        <input type="checkbox" name="horas" id="hor2" class="co2">
+                        <label for="hor2">Hora 3:30 pm N° 2</label> 
+                        <!--hora de turno-->
+                    </div>
+                    <div class="hours">
+                        <input type="checkbox" name="horas" id="hor3" class="co1">
+                        <label for="hor3">Hora 4:30 pm N° 3</label>
+                        <input type="checkbox" name="horas" id="hor4" class="co2">
+                        <label for="hor4">Hora 5:30 pm N° 4</label>
+                         <!--hora de turno-->
+                    </div> 
+                    <div class="hours">
+                        <input type="checkbox" name="horas" id="hor5" class="co1">
+                        <label for="hor5">Hora 6:30 pm N° 5</label>
+                        <input type="checkbox" name="horas" id="hor6" class="co2">
+                        <label for="hor6">Hora 7:30 pm N° 6</label>
+                         <!--hora de turno-->
+                    </div>
+            </fieldset>
+            <button>Grabar</button>
+            <!--boton para registrar la informaciòn-->
+            </form>
+        </div>
+        </fieldset>
+    </div> 
+    </body>
+    <html>
